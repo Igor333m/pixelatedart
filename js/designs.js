@@ -1,4 +1,5 @@
-let color, gridHeight, gridWidth;
+let  gridHeight, gridWidth;
+let color = "black"; // Default color
 let tr = "<tr></tr>";
 let td = "<td></td>"
 let canvas = $('#pixel_canvas');
@@ -31,6 +32,9 @@ function makeGrid(row, column) {
 	// <td> change color
 	$('td').click(function() {
 		$(this).css('background-color', color);
+	});
+	$('td').dblclick(function() {
+		$(this).css('background-color', 'white');
 	});
 }
 
