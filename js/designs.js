@@ -22,10 +22,15 @@ $('#input_width').change(function() {
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid(row, column) {
-	for (let i = 0; i < row; i++) {
-		$('#pixel_canvas').append(tr);
+	// Remove all the child nodes in table
+	canvas.empty();
+
+	for (let r = 0; r < row; r++) {
+		canvas.append(tr);
+		for (let c = 0; c < column; c++) {
+			$("tr:nth-child(" + (r + 1) + ")").append(td);
+		}
 	}
-	//$('tr').append(td);
 
 
 
