@@ -1,9 +1,7 @@
 let color, gridHeight, gridWidth;
 let tr = "<tr></tr>";
 let td = "<td></td>"
-
 let canvas = $('#pixel_canvas');
-
 
 // Select color input
 $('#color_picker').change(function() {
@@ -20,23 +18,25 @@ $('#input_width').change(function() {
 });
 
 // When size is submitted by the user, call makeGrid()
-
 function makeGrid(row, column) {
 	// Remove all the child nodes in table
 	canvas.empty();
-
+	// Making the grid cavas
 	for (let r = 0; r < row; r++) {
 		canvas.append(tr);
 		for (let c = 0; c < column; c++) {
-			$("tr:nth-child(" + (r + 1) + ")").append(td);
+			$('tr:nth-child(' + (r + 1) + ')').append(td);
 		}
 	}
-
-
-
+	// <td> change color
+	$('td').click(function() {
+		$(this).css('background-color', color);
+	});
 }
 
+// Submit button
 $('#size_picker').submit(function(event) {
 	makeGrid(gridHeight, gridWidth);
 	event.preventDefault();
 });
+
