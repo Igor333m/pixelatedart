@@ -1,4 +1,5 @@
-let  gridHeight, gridWidth;
+let  gridHeight = $('#input_height');
+let gridWidth = $('#input_width');
 // Select color input
 let color = $('#color_picker');
 let tr = "<tr></tr>";
@@ -6,13 +7,13 @@ let td = "<td></td>"
 let canvas = $('#pixel_canvas');
 
 // Select size input
-$('#input_height').change(function() {
+/*$('#input_height').change(function() {
 	gridHeight = $(this).val();
 });
 
 $('#input_width').change(function() {
 	gridWidth = $(this).val();
-});
+});*/
 
 // When size is submitted by the user, call makeGrid()
 function makeGrid(row, column) {
@@ -33,10 +34,11 @@ function makeGrid(row, column) {
 		$(this).css('background-color', 'white');
 	});
 }
+makeGrid(gridHeight.val(), gridWidth.val());
 
 // Submit button
 $('#size_picker').submit(function(event) {
-	makeGrid(gridHeight, gridWidth);
+	makeGrid(gridHeight.val(), gridWidth.val());
 	event.preventDefault();
 });
 
