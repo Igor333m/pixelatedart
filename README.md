@@ -1,5 +1,6 @@
 # Pixel Art Maker Project
 
+Welcome to pixelated art. Here you can make awesome pixel art. Be creative!
 ## Table of Contents
 
 * [Instructions](#instructions)
@@ -7,11 +8,11 @@
 
 ## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+To get started, choose size of the grid (between 1 and 40), color that works for you and have fun. You can use double click to reverse color to white.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Feel free to contribute to repository as much as you like :-)
+
 # pixelatedart
