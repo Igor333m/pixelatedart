@@ -1,13 +1,9 @@
 let  gridHeight, gridWidth;
-let color = "black"; // Default color
+// Select color input
+let color = $('#color_picker');
 let tr = "<tr></tr>";
 let td = "<td></td>"
 let canvas = $('#pixel_canvas');
-
-// Select color input
-$('#color_picker').change(function() {
-	color = $(this).val();
-});
 
 // Select size input
 $('#input_height').change(function() {
@@ -31,7 +27,7 @@ function makeGrid(row, column) {
 	}
 	// <td> change color
 	$('td').click(function() {
-		$(this).css('background-color', color);
+		$(this).css('background-color', color.val());
 	});
 	$('td').dblclick(function() {
 		$(this).css('background-color', 'white');
