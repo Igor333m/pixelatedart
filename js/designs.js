@@ -30,6 +30,7 @@ function makeGrid(row, column) {
 	$('td').click(function() {
 		$(this).css('background-color', color.val());
 	});
+	// Use double click to change color to white
 	$('td').dblclick(function() {
 		$(this).css('background-color', 'white');
 	});
