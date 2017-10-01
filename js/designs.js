@@ -6,15 +6,6 @@ let tr = "<tr></tr>";
 let td = "<td></td>"
 let canvas = $('#pixel_canvas');
 
-// Select size input
-/*$('#input_height').change(function() {
-	gridHeight = $(this).val();
-});
-
-$('#input_width').change(function() {
-	gridWidth = $(this).val();
-});*/
-
 // When size is submitted by the user, call makeGrid()
 function makeGrid(row, column) {
 	// Remove all the child nodes in table
