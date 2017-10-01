@@ -42,4 +42,3 @@ $('#size_picker').submit(function(event) {
 	makeGrid(gridHeight.val(), gridWidth.val());
 	event.preventDefault();
 });
-
