@@ -42,3 +42,13 @@ input[type=number] {
 #size_picker input:invalid {
     color: red;
 }
+
+#size_picker input:focus {
+    -webkit-box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+}
+
+td:hover {
+    background-color: rgba(0,255,0,.3);
+}
