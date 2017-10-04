@@ -52,3 +52,7 @@ input[type=number] {
 td:hover {
     background-color: rgba(0,255,0,.3);
 }
+
+input[type=color]:hover {
+    border-radius: 5px;
+}
