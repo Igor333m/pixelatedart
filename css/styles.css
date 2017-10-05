@@ -65,6 +65,10 @@ hr {
     top: 0.2rem;
 }
 
+hr {
+    border-color: #efa424;
+}
+
 input[type=number] {
     width: 6em;
 }
