@@ -78,12 +78,13 @@ input[type=color]:hover {
 table,
 tr,
 td {
-    border: 1px solid black;
+    border:0.1rem solid grey;
 }
 
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    border:0.2rem solid #efa424;
 }
 
 tr {
