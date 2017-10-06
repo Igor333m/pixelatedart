@@ -27,7 +27,7 @@ h2:first-of-type {
     background-color: #fcad26;
     font-weight: bold;
     color: white;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.1rem;
     padding: 0.5rem 3rem;
     margin-left: 1rem;
     border-radius: 0.5rem;
