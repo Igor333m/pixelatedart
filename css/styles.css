@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    font-family: 'Slabo 27px', serif;
 }
 
 h1 {
@@ -32,6 +33,7 @@ h2:first-of-type {
     border-radius: 0.5rem;
     box-shadow: 0 0.2rem #efa424;
     text-transform: uppercase;
+    font-family: 'Slabo 27px', serif;
 }
 
 .btn:hover {
